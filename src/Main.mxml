@@ -41,5 +41,25 @@
                 </s:HGroup>
             </s:VGroup>
         </s:BorderContainer>
+        <s:BorderContainer>
+            <s:VGroup>
+                <s:Label text="testObject3"/>
+                <s:HGroup>
+                    <s:CheckBox selected="{testObject3.instance.value1}"/>
+                    <s:CheckBox selected="{testObject3.instance.value2}"/>
+                    <s:CheckBox selected="{testObject3.instance.value3}"/>
+                </s:HGroup>
+                <s:HGroup>
+                    <s:TextInput text="{testObject3.instance.value1 ? 'v1 true' : 'v1 false'}"/>
+                    <s:TextInput text="{testObject3.instance.value2 ? 'v2 true' : 'v2 false'}"/>
+                    <s:TextInput text="{testObject3.instance.value3 ? 'v3 true' : 'v3 false'}"/>
+                </s:HGroup>
+                <s:HGroup>
+                    <s:TextInput text="{testObject3.instance.value12 ? 'v12 true' : 'v12 false'}"/>
+                    <s:TextInput text="{testObject3.instance.value13 ? 'v13 true' : 'v13 false'}"/>
+                    <s:TextInput text="{testObject3.instance.value23 ? 'v23 true' : 'v23 false'}"/>
+                </s:HGroup>
+            </s:VGroup>
+        </s:BorderContainer>
     </s:VGroup>
 </s:WindowedApplication>
